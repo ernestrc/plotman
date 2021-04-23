@@ -180,6 +180,7 @@ def main():
                     time.sleep(60)
                     jobs = Job.get_running_jobs(cfg.directories.log)
                 firstit = False
+                # FIXME run process!
                 archive.archive(cfg.directories, jobs)
 
         # Debugging: show the destination drive usage schedule
